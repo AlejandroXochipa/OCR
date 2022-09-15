@@ -1,0 +1,19 @@
+"""for i in range(1,26):
+        for j in posiblesclases_minusculas:
+            #ruta = r"C:\Users\xochi\OneDrive\Escritorio\UAEM\OCR2\Banco de datos\Recibo letras 2\Recibo letras 2\+j"
+            #ruta_con_variable = 
+            #img = cv2.imread(ruta.joinpath(j+'-'+str(i)+".jpg").resolve())
+            #img = cv2.imread(j+'-'+str(i)+".jpg")
+            #j = r"\"+j
+            jota =  str(j)+'-'+str(i)+".jpg"
+            r = os.path.join(ruta ,jota)
+            img = cv2.imread(r)
+            if img is not None:
+                m,n,_ = img.shape
+                if m != 20 or n != 20:
+                    img = escalar(img,m,n)
+                hog = get_hog()
+                #print(hog.compute(img))
+                datos2.append(np.array(hog.compute(img)))
+                #datos.append(hog.compute(img))
+                clases2.append(np.where(np.array(posiblesclases_minusculas)==j)[0][0]) """
